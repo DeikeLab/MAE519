@@ -21,6 +21,6 @@ Plot the profiles from the last 2 methods on top of the drop picture.
 Compare the 3 methods.
 
 ## References
-[1][ Berry, J. D. et al. 2015. “Measurement of Surface and Interfacial Tension Using Pendant Drop Tensiometry.” J. Coll. Interface Sci. 454, p. 226–37](https://doi.org/10.1016/j.jcis.2015.05.012)
+[1][ Berry, J. D. et al. 2015](https://doi.org/10.1016/j.jcis.2015.05.012) “Measurement of Surface and Interfacial Tension Using Pendant Drop Tensiometry.” J. Coll. Interface Sci. 454, p. 226–37 [pdf](refs/Berry2015.pdf)
 
-[2][ Misak, M. D. 1968. “Equations for Determining 1/H versus S Values in Computer Calculations of Interfacial Tension by the Pendent Drop Method.” Journal Coll. Interface Sci. 27 (1), p. 141–142](http://dx.doi.org/10.1016/0021-9797(68)90020-9)
+[2][ Misak, M. D. 1968](http://dx.doi.org/10.1016/0021-9797(68)90020-9) “Equations for Determining 1/H versus S Values in Computer Calculations of Interfacial Tension by the Pendent Drop Method.” Journal Coll. Interface Sci. 27 (1), p. 141–142 [pdf](refs/Misak1968.pdf)
