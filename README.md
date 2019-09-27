@@ -1,4 +1,4 @@
-# MAE519
+# MAE519: Practical Experimental Methods
 
 | Activity | Indicative timing | PPE |
 |---|---|---|
