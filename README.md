@@ -14,4 +14,5 @@
 - Python, from [Anaconda distribution](https://www.anaconda.com/)
 - Python packages: [scikit-image](https://scikit-image.org/), [trackpy](http://soft-matter.github.io/trackpy/v0.4.1/)
 
-# [Space occupancy](space_occupancy.png)
+# Space occupancy
+![Space occupancy](space_occupancy.png)
