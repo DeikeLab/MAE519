@@ -6,9 +6,9 @@ The procedure runs in two successive steps:
 2. link the particles from each frame to the next one.
 
 Different algorithms and options are available for each step, depending on the experimental conditions and parameters. Open source tools are available online:
-- [ImageJ]() provides a basic Manual Tracking tool (Plugins/Tracking/Manual Tracking)
-- [TrackMate](), also in ImageJ, is a more elaborate, semi-automated tracking plugin (Plugins/Tracking/TrackMate)
-- In [Python](), researchers have developed [trackpy](), a package to automate particle tracking, though not as user friendly as ImageJ.
+- [ImageJ](https://fiji.sc/) provides a basic Manual Tracking tool (Plugins/Tracking/Manual Tracking)
+- [TrackMate](https://imagej.net/TrackMate), also in ImageJ, is a more elaborate, semi-automated tracking plugin (Plugins/Tracking/TrackMate)
+- In [Python](https://www.anaconda.com/), researchers have developed [trackpy](soft-matter.github.io/trackpy/), a package to automate particle tracking, though not as user friendly as ImageJ.
 
 ## Lab assignment
 Obtain the video of a single rising bubble.
