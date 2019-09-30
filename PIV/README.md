@@ -18,11 +18,11 @@ The end goal of the lab is to get a time-resolved 2-D flowfield--that is, a meas
 
 First we'll use the graphical user interface in PIVLab to compute a single "snapshot". The GUI can be launched by going to Apps -> PIVLab in Matlab once the PIVLab toolbox is installed.
 
-Use the "Load Images" button to import the two frames in the [`/data/`]([https://github.com/danjruth/MAE519-piv-module/tree/master/data](https://github.com/danjruth/MAE519-piv-module/tree/master/data)) folder in this repository. Image pre-processing can be controlled under Image settings -> Image pre-processing, and the PIV parameters (the size of the interrogation windows) can be controlled under Analysis -> PIV Settings. Once the analysis is run, velocity vectors will be superimposed on the particle image in the GUI, and they can be filtered or exported to the Matlab workspace or the disk.
+Use the "Load Images" button to import the two frames in the [`/data/`](https://github.com/DeikeLab/MAE519/tree/master/PIV/data) folder in this repository. Image pre-processing can be controlled under Image settings -> Image pre-processing, and the PIV parameters (the size of the interrogation windows) can be controlled under Analysis -> PIV Settings. Once the analysis is run, velocity vectors will be superimposed on the particle image in the GUI, and they can be filtered or exported to the Matlab workspace or the disk.
 
 ### With OpenPIV
 
-There's no GUI in OpenPIV, but the script [`process_snapshot_openpiv.py`](https://github.com/danjruth/MAE519-piv-module/blob/master/scripts/process_snapshot_openpiv.py) walks through the process of calculating a velocity field with OpenPIV.
+There's no GUI in OpenPIV, but the script [`process_snapshot_openpiv.py`](https://github.com/DeikeLab/MAE519/blob/master/PIV/scripts/process_snapshot_openpiv.py) walks through the process of calculating a velocity field with OpenPIV.
 
 ## Getting a time-resolved flowfield
 
@@ -30,7 +30,7 @@ Getting a time-resolved flowfield boils down to writing a loop that performs the
 
 ### With OpenPIV
 
-To do this with OpenPIV, try taking code from [`process_snapshot_openpiv.py`](https://github.com/danjruth/MAE519-piv-module/blob/master/scripts/process_snapshot_openpiv.py) to write a script that performs this loop. You'll need to make an array of "a" frames, which can be done using the `numpy.arange` function. For example, if you wanted the "a" frames of your velocity field snapshots to be [0,2,4,...98], you could use `np.arange(0,99,2)`.
+To do this with OpenPIV, try taking code from [`process_snapshot_openpiv.py`](https://github.com/DeikeLab/MAE519/tree/master/PIV/scripts/process_snapshot_openpiv.py) to write a script that performs this loop. You'll need to make an array of "a" frames, which can be done using the `numpy.arange` function. For example, if you wanted the "a" frames of your velocity field snapshots to be [0,2,4,...98], you could use `np.arange(0,99,2)`.
 
 Each velocity field snapshot involves two 2-D arrays of velocity values `u` and `v` for the two components of the velocity. If your PIV field of view has `nx` columns and `ny` rows of windows, the `shape` of `u` and `v` will each be `(ny,nx)`. It can be more convenient to have a *single* array for the velocity field which contains both components of velocity. We can call this array `snapshot`, and it will have 3 dimensions (vertical and horizontal position, as well as the component of the flow). This can be created with `snapshot=np.array([u,v])`, which has shape `(2,ny,nx)`. It might be more convenient to have the velocity component as the final axis, which can be done with `snapshot=np.moveaxis(snapshot,0,-1)`, which moves the first axis of the array to the end. We can get the two components of velocity with `u=snapshot[:,:,0]` and `v=snapshot[:,:,1]`.
 
@@ -38,7 +38,7 @@ Once we start considering snapshots at multiple times, it's convenient to have a
 
 ### With PIVLab
 
-To work with the output from PIVLab in Python, use the script [create_PIVLab_params_in_python.py](https://github.com/danjruth/MAE519-piv-module/blob/master/scripts/create_PIVLab_params_in_python.py) to create a `.mat` file that contains the desired PIVLab parameters. Then run the Matlab script [run_pivlab_tiffImages.m](https://github.com/danjruth/MAE519-piv-module/blob/master/piv_mae519/run_pivlab_tiffImages.m), which will use PIVLab to compute the snapshots at the desired points in time, saving the results in `..._u.txt` and `..._v.txt` files for each snapshot. Finally, the script [read_PIVLab_results_into_python.py](https://github.com/danjruth/MAE519-piv-module/blob/master/scripts/read_PIVLab_results_into_python.py) can be run in Python to read in these `.txt` files and create a single 4-D array `ff` with all the velocity field data.
+To work with the output from PIVLab in Python, use the script [create_PIVLab_params_in_python.py](https://github.com/DeikeLab/MAE519/tree/master/PIV/scripts/create_PIVLab_params_in_python.py) to create a `.mat` file that contains the desired PIVLab parameters. Then run the Matlab script [run_pivlab_tiffImages.m](https://github.com/DeikeLab/MAE519/tree/master/PIV/piv_mae519/run_pivlab_tiffImages.m), which will use PIVLab to compute the snapshots at the desired points in time, saving the results in `..._u.txt` and `..._v.txt` files for each snapshot. Finally, the script [read_PIVLab_results_into_python.py](https://github.com/DeikeLab/MAE519/tree/master/PIV/scripts/read_PIVLab_results_into_python.py) can be run in Python to read in these `.txt` files and create a single 4-D array `ff` with all the velocity field data.
 
 ## Lab assignment
 
