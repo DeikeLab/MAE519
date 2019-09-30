@@ -14,7 +14,7 @@ It wasn't too many years ago that all high-speed motion was produced in this fas
 While this technique can easily produce an image, the challenge becomes a matter of timing the flash relative to the event.
 If the time between the event happening and the flash can be made consistent, then a sequential series of pictures can be compiled.
 Common means of triggering the cameras employ sound, pressure switches, lasers, etc.
-A beautiful [example] of this behavior was used to visualize spray and breakup.
+A beautiful [example](https://gfm.aps.org/meetings/dfd-2014/5408ec6e69702d07711b0200) of this behavior was used to visualize spray and breakup.
 
 For our class, we will not need to sample faster than the available frame-rate of the camera.
 But we will need to use bright lights to provide a good sampling for the sensor, and a lens must be used which can capture the desired field of view on the reduced sensor size.
