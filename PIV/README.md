@@ -42,12 +42,14 @@ To work with the output from PIVLab in Python, use the script [create_PIVLab_par
 
 ## Lab assignment
 
-Obtain two PIV videos of the turbulent jet, one giving a large-scale view of the jet structure and one giving a zoomed-in view. Before taking the data, determine a good amount of seeding particles and camera frame rate to use.
+Have the software listed above installed/ready to use by lab on Friday 10/4/2019. It's best to have at least 15 gigabytes free to store the PIV images, but with more space you'll be able to work with longer PIV measurements.
+
+In lab, obtain two PIV videos of the turbulent jet, one giving a large-scale view of the jet structure and one giving a zoomed-in view. Before taking the data, determine a good amount of seeding particles and camera frame rate to use. **The zoomed-in view will have a pixel correspond to around 50 microns; the zoomed-out view will be around 100 microns/pixel. The typical velocity to resolve is around 0.5 m/s.**
 
 After getting comfortable processing a single PIV snapshot with both PIVLab and OpenPIV (as described above), choose one of the two movies to analyze using both packages. With each result, characterize the jet in a few figures, showing quantities such as the time-averaged flowfield or the distribution of velocities measured. How do the results compare between the two packages? Why do the results differ?
 
-Then, pick one of the two packages with which to analyze the other PIV movie (with the different field of view). Try analyzing the results with a few combinations of PIV processing parameters, such as changing the window size or number of movie frames separating "a" and "b" images. How do these parameters affect the results? Determine which set of parameters you think will give the best results. Plot the velocity at a single location in the flow over time. Does it look well-resolved?
+Then, pick one of the two packages with which to analyze the other PIV movie (with the different field of view). Try analyzing the results with a few combinations of PIV processing parameters, such as changing the window size or number of movie frames separating "a" and "b" images. How do these parameters affect the results? Determine which set of parameters you think will give the best results. Plot the velocity at a single location in the flow over time (**you will need to calculate the time of each snapshot given the camera/processing parameters you've chosen**). Does it look well-resolved?
 
-Finally, do a comparison of results from the overlapping region of the two views you obtained. How do quantities like the mean flow and velocity distributions compare between the two views?
+Finally, do a comparison of results from the two views you obtained. How do quantities like the mean flow and velocity distributions compare between the two views?
 
 The takeaway from this exercise should be that PIV is a powerful tool to measure fluid flows, but the choice of experimental and processing parameters isn't trivial and can affect results.
