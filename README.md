@@ -23,7 +23,7 @@ Acquiring high speed phenomena: the bursting of a balloon filled with water.
 Pattern recognition and feature extraction from an image: surface tension measurement by the method of the pendant drop.
 
 # Installations & Downloads
-The 4 modules rely strongly on the following free and open source softwares:
+The 4 modules rely strongly on the following softwares:
 - [ImageJ](https://fiji.sc/)
 - [Python](https://www.python.org/), from [Anaconda distribution](https://www.anaconda.com/)
 - Python packages: [scikit-image](https://scikit-image.org/), [trackpy](http://soft-matter.github.io/trackpy/), [OpenPIV](http://www.openpiv.net/openpiv-python/)
