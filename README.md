@@ -26,7 +26,9 @@ Pattern recognition and feature extraction from an image: surface tension measur
 The 4 modules rely strongly on the following free and open source softwares:
 - [ImageJ](https://fiji.sc/)
 - [Python](https://www.python.org/), from [Anaconda distribution](https://www.anaconda.com/)
-- Python packages: [scikit-image](https://scikit-image.org/), [trackpy](http://soft-matter.github.io/trackpy/)
+- Python packages: [scikit-image](https://scikit-image.org/), [trackpy](http://soft-matter.github.io/trackpy/), [OpenPIV](http://www.openpiv.net/openpiv-python/)
+- [Matlab](https://princeton.service-now.com/snap?id=kb_article&sys_id=cfaf4e73db601b00249b7b6b8c96199b) (not open source, but available for free through Princeton)
+- [PIVLab](https://www.mathworks.com/matlabcentral/fileexchange/27659-pivlab-particle-image-velocimetry-piv-tool)
 
 The processing for PTV, Drop and Fast will be made on the lab computers, you will run the PIV processing from your personal laptop.
 See details in the different modules, and we can help for the installation.
