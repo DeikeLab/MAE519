@@ -8,7 +8,7 @@ In this module we'll use two open-source PIV packages, [OpenPIV-python](http://w
  - [PIVLab 2.20](https://www.mathworks.com/matlabcentral/fileexchange/27659-pivlab-particle-image-velocimetry-piv-tool), a Matlab toolbox for PIV
  - Python 3, and I'd recommend the [Anaconda distribution](https://www.anaconda.com/distribution/)
  - [OpenPIV](http://www.openpiv.net/openpiv-python/), a Python package for PIV
- - This repository, and either install it as a package, or in Spyder (Anaconda), add it to the PYTHONPATH manager so you can `import mae519_piv`
+ - This folder, and either install it as a package, or in Spyder (Anaconda), add it to the PYTHONPATH manager so you can `import piv_mae519`
 
 ## Getting a single flowfield snapshot
 
