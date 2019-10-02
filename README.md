@@ -4,7 +4,7 @@
 | Module | Indicative timing | PPE |
 |---|---|---|
 |[PIV1](PIV) preparation | 20' | gloves |
-|[PIV2](PIV) acquisition | 30' | Laser goggles|
+|[PIV2](PIV) acquisition | 30' | laser goggles|
 |[PIV3](PIV) processing | 30'| |
 |[PTV](PTV) | 60' | |
 |[Fast Imaging](Fast) | 60' | |
