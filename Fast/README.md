@@ -19,6 +19,11 @@ A beautiful [example](https://gfm.aps.org/meetings/dfd-2014/5408ec6e69702d07711b
 For our class, we will not need to sample faster than the available frame-rate of the camera.
 But we will need to use bright lights to provide enough information for the sensor, and a lens must be used which can capture the desired field of view on the reduced sensor size.
 
+## PCC Software
+To save the files, we can export them to a file format that FIJI accepts directly on the lab computer. Or if you'd like to work with the raw file formats directly, you can download the [PCC software](https://phantomhighspeed-service.force.com/?section=PCCSoftware) to your laptop. Unfortunately, it's only available for Windows :(.
+
+Everything you will need to do with these files can also be done with FIJI in an exported file as well.
+
 ## Lab assignment
 Obtain the video of a water-balloon bursting.
 
