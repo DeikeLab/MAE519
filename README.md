@@ -1,6 +1,7 @@
 # MAE519: Practical Experimental Methods
+# Modules
 
-| Activity | Indicative timing | PPE |
+| Module | Indicative timing | PPE |
 |---|---|---|
 |[PIV1](PIV) preparation | 20' | gloves |
 |[PIV2](PIV) acquisition | 30' | Laser goggles|
@@ -9,7 +10,6 @@
 |[Fast Imaging](Fast) | 60' | |
 |[Pendant Drop](Drop) | 60' | |
 
-# Modules
 ## [Particle Image Velocimetry](PIV)
 Flow visualization of a jet exiting a pump: preparation of flow tracers, image acquisition and data processing.
 
