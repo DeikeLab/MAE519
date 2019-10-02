@@ -41,8 +41,6 @@ def create_dict_and_mat(d,overwrite_dict=False,temp_folder=None):
     Keys in d should include:
         casename
         folder (where the images are located and the results will be saved)
-        dt_orig (the time interval between sequential images)
-        dx_orig (the pixel scaling)
         n_passes (the number of passes PIVLab should make)
         area1-area4 (the areas of each pass)
         start_frame (the first frame to use)
@@ -75,11 +73,6 @@ def create_dict_and_mat(d,overwrite_dict=False,temp_folder=None):
     d['area3'] = areas[2]
     d['area4'] = areas[3]
     d['step1'] = d['area1']/2
-    
-    # resolution of final product
-    d['dx'] = d['dx_orig']*d['final_area']/2. # assuming 50% overlap
-    d['dt'] = d['dt_orig']*d['a_frame_skip']
-    d['vel_factor'] = d['dx_orig']/(d['dt_orig']*d['frame_diff']) # original pixel spacing divided by time between a and b frames
     
     # save the information as a .mat file for Matlab to read
     scipy.io.savemat(d['folder']+d['name_for_save']+'_matlabParams.mat',d)
@@ -139,6 +132,7 @@ def reconstruct_from_Matlab(folder,casename,a_frames):
     ff = np.zeros((len(a_frames),ny,nx,2))
     
     # go through each point in time, and add the velocity vector field to ff
+    print('Reading in each text file...')
     for ai,a in enumerate(a_frames):
         u,v = _read_vel(a)
         ff[ai,:,:,0] = u

@@ -1,8 +1,5 @@
 function [x,y,u,v,typevector] = process_snapshot_with_PIVLab(filepath1,filepath2,n_passes,area1,step1,area2,area3,area4)
 
-% need to have an output variable for some reason?
-%none_var = 0;
-
 % read in the A and B frames--can't be passed directly from Python, so we
 % pass the filepaths to their text files instead
 image1 = imread(filepath1);

@@ -1,6 +1,6 @@
 %{
 Use this script to perform the PIV calculation with PIVLab for an entire
-PIV movie. Give it the location of a .mat file created with the Python
+PIV movie. Give it the folder/name of a .mat file created with the Python
 function piv_mae519.interface_PIVLab_with_python.create_dict_and_mat, and
 it will import the PIV parameters.
 
@@ -12,8 +12,8 @@ piv_mae519.interface_PIVLab_with_python.reconstruct_from_Matlab.
 %% User input
 
 % Where the data is
-folder = 'D:\data_MILES_D\190923_PIV_mae519\piv_pump8V_fps4100_exposure190_dx49um_particleMass6g\\\\';
-casename = 'piv_pump8V_fps4100_exposure190_dx49um_particleMass6g';
+folder = 'C:\Users\danjr\Documents\Teaching\MAE519_Fall2019\PIV_testing_largescale\\\\';
+casename = 'piv_pump8V_fps1400_exposure400_dx80um';
 
 %% End user input
 
